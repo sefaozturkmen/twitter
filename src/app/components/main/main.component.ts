@@ -74,11 +74,9 @@ export class MainComponent implements OnInit {
 
   addComment(tweet: Tweet) {
     if (tweet.isComment == false) {
-      console.log(tweet)
       tweet.comment += 1;
       tweet.isComment = true;
     } else {
-      console.log(tweet)
       tweet.comment -= 1;
       tweet.isComment = false;
     }
@@ -87,11 +85,9 @@ export class MainComponent implements OnInit {
 
   addRetweet(tweet: Tweet) {
     if (tweet.isRetweet == false) {
-      console.log(tweet)
       tweet.retweet += 1;
       tweet.isRetweet = true;
     } else {
-      console.log(tweet)
       tweet.retweet -= 1;
       tweet.isRetweet = false;
     }
@@ -100,11 +96,9 @@ export class MainComponent implements OnInit {
 
   addFav(tweet: Tweet) {
     if (tweet.isFav == false) {
-      console.log(tweet)
       tweet.fav += 1;
       tweet.isFav = true;
     } else {
-      console.log(tweet)
       tweet.fav -= 1;
       tweet.isFav = false;
     }
@@ -113,11 +107,9 @@ export class MainComponent implements OnInit {
 
   addShare(tweet: Tweet) {
     if (tweet.isShare == false) {
-      console.log(tweet)
       tweet.share += 1;
       tweet.isShare = true;
     } else {
-      console.log(tweet)
       tweet.share -= 1;
       tweet.isShare = false;
     }
