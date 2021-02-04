@@ -1,0 +1,40 @@
+.trend-title {
+    border-bottom: 1px solid rgb(228, 228, 228);
+    font-weight: 800;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card {
+    border-radius: 15px;
+    border: 0;
+}
+
+li {
+    cursor: default;
+}
+
+.card,
+.card ul li {
+    background-color: #F7F9FA;
+}
+
+.list-group-item {
+    border-bottom: 1px solid rgb(228, 228, 228)!important;
+}
+
+.list-group-item:last-child {
+    border-bottom: 0px!important;
+    border-bottom-right-radius: 15px!important;
+    border-bottom-left-radius: 15px!important;
+}
+
+.trend-text {
+    font-weight: 700;
+}
+
+.trend-tweet {
+    color: #A6B1BB;
+}

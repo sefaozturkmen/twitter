@@ -1,0 +1,49 @@
+<div class="card tweet-box mb-2">
+    <div class="card-header">
+        <div class="navbar">
+            <h2>{{title}}</h2>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="d-flex align-items-start text-area">
+            <img src="assets/img/sefa.jpg" style="width: 60px; height: 60px;">
+            <input #item type="text" maxlength="100" class="text-input border-0 form-control" placeholder="What's happening?">
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+
+            <button class="btn btn-tweet" (click)="addTweet(item.value); item.value='';" (click)="setTweet()">Tweet</button>
+        </div>
+    </div>
+</div>
+
+<div class="card card-main" *ngFor="let tweet of tweetList ">
+    <div class="card-body">
+        <div class="d-flex ">
+            <img src="{{tweet.image}} " style="width: 60px; height: 60px; ">
+            <div class="d-flex flex-column px-2">
+                <span class="tweet-title">{{tweet.name}}</span>
+                <span class="tweet-text">{{tweet.text}}</span>
+            </div>
+            <span class="close-icon " (click)="deleteTweet(tweet) "><i class="fas fa-close "></i></span>
+        </div>
+        <div class="d-flex justify-content-around ">
+            <span class="icon-tweet icon-blue " [class.active-comment]="tweet.isComment" (click)="addComment(tweet) ">
+                <i class="far fa-comment "></i>
+                <span *ngIf="tweet.comment>0">{{tweet.comment}}</span>
+            </span>
+            <span class="icon-tweet icon-retweet" [class.active-retweet]="tweet.isRetweet" (click)=" addRetweet(tweet)">
+                <i class="fas fa-retweet "></i>
+                <span *ngIf="tweet.retweet>0">{{tweet.retweet}}</span>
+            </span>
+            <span class="icon-tweet icon-fav" [class.active-fav]="tweet.isFav" (click)=" addFav(tweet)">
+                <i class="far fa-heart"></i>
+                <span *ngIf="tweet.fav>0">{{tweet.fav}}</span>
+            </span>
+            <span class="icon-tweet icon-blue" [class.active-share]="tweet.isShare" (click)=" addShare(tweet)">
+                <i class="fas fa-external-link-alt"></i>
+                <span *ngIf="tweet.share>0">{{tweet.share}}</span>
+            </span>
+        </div>
+    </div>
+</div>

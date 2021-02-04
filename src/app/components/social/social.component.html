@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="trend-title px-3 py-2">Trends for you</h5>
+        <ul class="list-group">
+            <li class="list-group-item d-flex flex-column py-2 px-3 m-0 border-0" *ngFor="let trend of trendList">
+                <span class="trend-text">{{ trend.text }}</span>
+                <span class="trend-tweet">{{ trend.tweet }} Tweets </span>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div id="category">
+    <span><i class="fab fa-2x fa-twitter"></i></span>
+    <ul>
+        <li class="border-0 d-flex category-item" routerLink='{{categoryList.adress}}' *ngFor="let categoryList of categoryList">
+            <span><i class="{{categoryList.logo}} category-logo"></i></span>
+            <span class="category-text  d-none d-lg-inline"> {{categoryList.title}} </span>
+        </li>
+    </ul>
+</div>

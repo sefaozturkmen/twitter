@@ -1,0 +1,38 @@
+.fab.fa-twitter {
+    color: #1da1f2;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.category-logo {
+    width: 38px;
+    font-size: 26px;
+    padding-right: 16px;
+    text-align: center;
+}
+
+.category-text {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.category-item {
+    padding: 5px 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    color: #1DA1F2;
+}
+
+table {
+    margin: 0;
+}
